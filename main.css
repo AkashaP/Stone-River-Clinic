@@ -115,7 +115,8 @@ figure figcaption {
 
 /* The colour for the nav bar background, figcaptions */
 .navbarbackground {
-	background: #E0D9C6; /* beige */
+	background: white;
+	background: rgba(217, 226, 230, 0.9); 
 }
 
 .roundtopedges {
