@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Stone River Clinic</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		
+		<!-- Scripts -->
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if IE]>
+			<style type="text/css">
+				legend span {top: 0;}
+				legend {color: black;}
+				#submit {position: relative; left: -80px;}
+			</style>
+	    <script>alert("test");</script>
+		<![endif]-->
+		
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+		<link rel="stylesheet" type="text/css" href="enquiries.css" />
+	    <script type="text/javascript" src="enquiries.js"></script>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	
+	
+		<!-- Stuff always on screen, i.e navbar -->
+		<div class="persistent">
+			<a href="#maincontent"><img id="skipnav" src="images/return.png" width="20" height="20" title="Back to top/Skip navigation" alt="Skip navigation/Back to top" /></a><!--<p class="navbarbackground" id="skipnav">Start of content</p>-->
+			<nav class="navbarbackground subtlefancyfont" style="border-bottom: 3px solid #C3BCAB;">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li> <a href="aboutacupuncture.html">About Acupuncture</a></li> <!-- video goes here -->
+					<li>  <a href="generalprices.html">General Prices</a></li> <!-- large table here -->
+					<li> <a href="aboutus.html"class=" subtlefancyfont">Contact Us</a></li> <!-- description table here -->
+					<li> Enquiries</li> <!-- form goes here -->
+				</ul>
+			</nav>
+		</div>
+		
+		
+		<!-- Contains the rest of the page content -->
+		<div id="mainbox" class="subtleborder">
+		
+		
+		
+			<!-- Banner and title -->
+			<div id="title">
+				<div class="titlewords">
+					<h1>Stone River</h1>
+					<h2 style="">Clinic</h2>
+				</div>
+				<div id="titleimg">
+					<a href="#maincontent">
+						<img src="images/titlebg.jpg" width="1000" height= "136" alt="An image of a stone river. For some reason, your browser is not displaying the image." title="Click to skip navigation" />
+					</a>
+				</div>
+				<p id="maincontent" class="subtlefancyfont">Enquiries</p>
+			</div>
+			
+			<!-- Main content of page -->
+			<article>
+				<h6>Have a question that you need help with?</h6>
+				<p id="askushere">Ask us here!</p>
+				<p style="color: red; font-size: 9px; margin-top: 1em;">* - Mandatory field</p>
+				<form name="contact" id="contact">
+					<fieldset id="contactinformationfield">
+						<fieldset id="contactmethodfield">
+							<legend>Preferred contact method</legend>
+						<label for="cmphone">
+							<input type="radio" name="cmphone" value="Phone" />
+							Phone
+						</label>
+						<label for="cmemail">
+							<input type="radio" name="cmemail" value="Email" />
+							Email
+						</label>
+						</fieldset>
+						
+						<legend>Contact information</legend>
+						<label class="mandatorylabel">
+							Name
+							<input type="text" name="name" id="nameinput" placeholder=" First name and last name" class="mandatory" style="margin-left: .3em;" />
+						</label>
+						<label class="mandatorylabel">
+							Email
+							<input type="email" name="email" id="emailinput" placeholder=" example@address.com"  class="mandatory" style="width: 15em; margin-left: .55em;"/>
+						</label>
+						<label class="mandatorylabel">
+							Phone
+							<input type="text" name="phone" id="phoneinput" placeholder=" 55 123 456"  class="mandatory" />
+						</label>
+						
+						<fieldset id="dob">
+						
+							<legend>Date of birth</legend>
+							<label>
+								Day
+								<input type="text" name="dobday" id="dobdayinput" placeholder=" 01" />
+							</label>
+							<label>
+								Month
+								<select id="dobmonth" name="dobmonth">
+									<option value="january">January</option>
+									<option value="february">February</option>
+									<option value="march">March</option>
+									<option value="april">April</option>
+									<option value="may">May</option>
+									<option value="june">June</option>
+									<option value="july">July</option>
+									<option value="august">August</option>
+									<option value="septemper">Septemper</option>
+									<option value="october">October</option>
+									<option value="november">November</option>
+									<option value="december">December</option>
+								</select>
+							</label>
+							<label>
+								Year
+								<input type="text" name="dobyear" id="dobyearinput" placeholder=" 1997" />
+							</label>
+						</fieldset>
+					</fieldset>
+					
+					<fieldset id="qinfo">
+						<legend>Query information</legend>
+						<p>What is this query or feedback about?</p>
+						
+						<label for="qinfoacupuncture">
+							<input id="qinfoacupuncture" type="checkbox" name="qinfo" value="Acupuncture" />
+							Acupunture
+						</label>
+						<label for="qinfoherbs">
+							<input id="qinfoherbs" type="checkbox" name="qinfo" value="Herbs" />
+							Herbs
+						</label>
+						<label for="qinfomassage">
+							<input id="qinfomassage" type="checkbox" name="qinfo" value="Massage" />
+							Massage
+						</label>
+						<label for="qinfocupping">
+							<input id="qinfocupping" type="checkbox" name="qinfo" value="Cupping" />
+							Cupping
+						</label>
+						<label for="qinfoother">
+							<input id="qinfoother" type="checkbox" name="qinfo" value="Other (please specify in comment box below)" />
+							Other
+						</label>
+					</fieldset>
+						
+					<fieldset id="commentfield">
+						<legend>Comments/queries</legend>
+						<textarea id="comment" name="comment" rows="20" cols="119" placeholder="E.g I want to know more about Acupuncture and how it ......"></textarea>
+					</fieldset>
+					<fieldset id="submitfield">
+						<input id="submit" type="submit" value="submit" onclick="checkReqFields(); return false;" />
+					</fieldset>
+				</form>
+			</article>
+				
+		
+			<div id="footerbox">
+				<div id="socialmedia">
+					<!--<img src="images/logo.png" width="16" height="16" />-->
+					<div style="float: left;">
+						<p class="subtlefancyfont">Follow us on: </p>
+						<!--<p style="margin-left: 3em; display: inline;">-->
+						<a href="http://www.facebook.com" target="external"><img src="images/facebook.png" width="16" height="16"/></a>
+						<a href="http://www.twitter.com" target="external"><img src="images/twitter.png" width="16" height="16"/></a>
+						<a href="http://www.google.com" target="external"><img src="images/radiothing.png" width="16" height="16"/></a>
+						<a href="https://smallbusiness.linkedin.com/" target="external"><img src="images/linkedin.png" width="16" height="16"/></a>
+					</div>
+					<p><a class="subtlefancyfont" href="#mainbox">Back to beginning</a></p>
+					<p style="float: right; font-size: 60%;">Copyright © 2015. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

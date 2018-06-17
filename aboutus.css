@@ -1,0 +1,27 @@
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 1em;
+}
+article p {
+	font-size: 105%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#prac2 {
+	float: right;
+}
+#prac1 dl, #prac2 dl {
+	margin-left: 4em;
+	margin-right: 4em;
+}
+#prac1 dt, #prac2 dt {
+	display: inline;
+}
+#prac1 dt, #prac2 dt {
+	
+}

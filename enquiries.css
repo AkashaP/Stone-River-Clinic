@@ -1,0 +1,38 @@
+legend { 
+  padding-top: 0;
+  padding-bottom; }
+fieldset {
+	padding: 0.5em;
+	margin-left: 4px;
+}
+#submitfield {
+	margin-top: 1em;
+	padding: 0;
+	border: none;
+	text-align: center;
+	
+}
+#submit {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 4px;
+}
+#contactmethodfield {
+	float:right;
+	border: none;
+}
+#contactinformationfield label{
+	display: block;
+}
+#dob {
+	margin-top: 1em;
+	border: none;
+}
+#dob label {
+	display: inline;
+}
+.mandatorylabel:after {
+	content: "* ";
+	color: red;
+}
+#askushere p {text-align: center; margin-bottom: 1em;}
